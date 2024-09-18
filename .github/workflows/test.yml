@@ -11,7 +11,7 @@ on:
   pull_request:
     types:
       - opened
-      - synchronize 
+      - synchronize
       - reopened
     branches:
       - main
@@ -19,15 +19,11 @@ on:
 
 env:
   DOTNET_VERSION: "8.0.x"
-  SOLUTION_PATH: "./{SOLUTION_PATH}"
+  SOLUTION_PATH: "./FastProjects.Caching.sln"
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -37,11 +33,11 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      # - name: Restore
-      #   run: dotnet restore ${{ env.SOLUTION_PATH }}
+      - name: Restore
+        run: dotnet restore ${{ env.SOLUTION_PATH }}
 
-      # - name: Build
-      #   run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore
+      - name: Build
+        run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore
 
-      # - name: Test
-      #   run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-restore --no-build
+      - name: Test
+        run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-restore --no-build

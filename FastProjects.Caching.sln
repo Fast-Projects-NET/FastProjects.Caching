@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastProjects.Caching", "src\FastProjects.Caching\FastProjects.Caching.csproj", "{5157975D-EE36-4C60-9CD4-A694C7B3AAD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastProjects.Caching.TestApp.Redis", "tests\FastProjects.Caching.TestApp.Redis\FastProjects.Caching.TestApp.Redis.csproj", "{28CF22A3-E67B-49A5-A356-249912BE730B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastProjects.Caching.TestApp.Redis.IntegrationTests", "tests\FastProjects.Caching.TestApp.Redis.IntegrationTests\FastProjects.Caching.TestApp.Redis.IntegrationTests.csproj", "{665A29E3-3069-40BC-BC28-64286FFA772D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastProjects.Caching.UnitTests", "tests\FastProjects.Caching.UnitTests\FastProjects.Caching.UnitTests.csproj", "{198E0F39-781D-4237-A9AF-9B1742F3DA21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5157975D-EE36-4C60-9CD4-A694C7B3AAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5157975D-EE36-4C60-9CD4-A694C7B3AAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5157975D-EE36-4C60-9CD4-A694C7B3AAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5157975D-EE36-4C60-9CD4-A694C7B3AAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28CF22A3-E67B-49A5-A356-249912BE730B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28CF22A3-E67B-49A5-A356-249912BE730B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28CF22A3-E67B-49A5-A356-249912BE730B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28CF22A3-E67B-49A5-A356-249912BE730B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{665A29E3-3069-40BC-BC28-64286FFA772D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665A29E3-3069-40BC-BC28-64286FFA772D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665A29E3-3069-40BC-BC28-64286FFA772D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665A29E3-3069-40BC-BC28-64286FFA772D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198E0F39-781D-4237-A9AF-9B1742F3DA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198E0F39-781D-4237-A9AF-9B1742F3DA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198E0F39-781D-4237-A9AF-9B1742F3DA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198E0F39-781D-4237-A9AF-9B1742F3DA21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
